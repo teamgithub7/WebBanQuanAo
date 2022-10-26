@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+}
+
+.headercontent{
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+}
+
+.headerconten ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headercontent li{
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.headernotice{
+    width: 100%;
+    height: 50px;
+    background-color: #333f48;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+}
+
+.item1{
+    width: 100%;
+    height: 400px;
+}
+
+.board{
+    width: 65%;
+    height: 400px;
+    float: right;
+}
+
+.board img{
+    max-width: 100%;
+    height: 100%;
+    float: right;
+    margin-right: 150px;
+}
+
+.filters{
+    height: 240px;
+    width: 240px;
+    float: left;
+    margin-left: 100px;
+}
+
+.filters div{
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px rgb(204, 204, 204);;
+    box-sizing: border-box;
+}
+
+
+.listproduct{
+    height: auto;
+    width: 65%;
+    padding-left: 25%;
+    float: top;
+}
+
+.listproduct ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.listproduct li{
+    width: 25%;
+    display: inline-block;
+}
+
+.listproduct img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.pages{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #333f48;
+}
