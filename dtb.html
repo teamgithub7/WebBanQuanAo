@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>Test Web database SQLite</title>
+   </head>
+   <body>
+       <script>
+           var db = openDatabase('mydb', '1.0', 'Demo for sqlite web', 5 * 1024 * 1024);
+           db.transaction(function (tx) {
+               tx.executeSql("CREATE TABLE IF NOT EXISTS USER(id unique, name)");
+               tx.executeSql("INSERT INTO USER (id, name) VALUES (?,?)", [3, "yasuo"]);
+
+               tx.executeSql("SELECT * FROM USER", [], (transaction, result) => {
+                       console.log(result.rows.item(0));
+                       console.log(result.rows.item(1));
+                       console.log(result.rows.item(2));
+                   },
+                   (transaction, error) => {
+
+                   }
+               );
+
+           });
+       </script>
+   </body>
+</html>
