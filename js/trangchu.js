@@ -1,10 +1,12 @@
-var input = document.getElementById("input")
+/*var input = document.getElementById("input")
+var testObject = { 'one': 1, 'two': 2, 'three': 3 };
 
-function f(ele) {
-    if(event.key === 'Enter') {
-        alert(ele.value);        
-        localStorage.setItem("key1",ele.value)
-    }
-}
+// Put the object into storage
+localStorage.setItem('testObject', JSON.stringify(testObject));
 
-console.log(localStorage.getItem("key1"))
+// Retrieve the object from storage
+var retrievedObject = localStorage.getItem('testObject');
+
+console.log('retrievedObject: ', JSON.parse(retrievedObject));
+*/
+
