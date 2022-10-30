@@ -22,7 +22,7 @@ body{
     float: left;
 }
 
-.topmenucontainer {
+.topmenu-container {
     height: 100%;
     width: auto;
     float: left;
@@ -43,11 +43,31 @@ body{
     padding-top: 40px;
 }
 
-.topmenu a{
+.dropdown {
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: inline-block;
 }
 
-.topmenucontainer1{
+.dropdown:hover a{
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+}
+
+.dropdown-content{
+  background-color: rgba(0, 0, 0, 0.595);
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 12px 16px;
+  top: 20px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.topmenu-container1{
     float: right;
     height: 100%;
     width: auto;
@@ -70,7 +90,7 @@ body{
     font-size: 15px;
 }
 
-.topmenucontainer1 a{
+.topmenu-container1 a{
     float: left;
     margin-top: 35px;
     margin-left: 12px;
@@ -83,7 +103,7 @@ body{
     right: 10px;
 }
 
-.headernotice{
+.header-notice{
     width: 100%;
     height: 50px;
     background-color: #333f48;
@@ -104,12 +124,12 @@ body{
     height: 100%;
 }
 
-.itemcontainer{
+.item-container{
     height: 500px;
     width: 100%;
 }
 
-.itemcontainer ul{
+.item-container ul{
     display: flex;
     height: 100%;
     width: 100%;
@@ -117,19 +137,19 @@ body{
     padding: 0px;
 }
 
-.itemcontainer li{
+.item-container li{
     width: 33%;
     height: 100%;
     margin: 0px auto;
     position: relative;
 }
 
-.itemcontainer img{
+.item-container img{
     width: 100%;
     height: 100%;
 }
 
-.itemcontainer div{
+.item-container div{
     position: absolute;
     background-color: rgba(69, 67, 67, 0.375);
     height: 100px;
@@ -163,7 +183,7 @@ body{
     position: relative;
 }
 
-.containercontent {
+.container-content {
     font-size: 25px;
     height: 50px;
     width: 100%;
