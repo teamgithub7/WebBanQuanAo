@@ -6,63 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/frame.css">
- 
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' crossorigin='anonymous'></script>
+    <script>
+
+    </script>
 </head>
-    <style>
-/* Nút Dropdown*/
-.nut_dropdown {
+<style>
   
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* Thiết lập vị trí cho thẻ div với class dropdown*/
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Nội dung Dropdown */
-.noidung_dropdown {
-  /*Ẩn nội dụng các đường dẫn*/
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Thiết kế style cho các đường dẫn tronng Dropdown */
-.noidung_dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* thay đổi màu background khi hover vào đường dẫn */
-.noidung_dropdown a:hover {background-color: #ddd;}
-
-/* hiển thị nội dung dropdown khi hover */
-.dropdown:hover .noidung_dropdown {display: block;}
-
-/* Thay đổi màu background cho nút khi được hover */
-.dropdown:hover .nut_dropdown {background-color: #00bfff;}
-
-/*Dùng Để hiển thị nội dung*/
-.hienThi {display:block;}
 </style>
 <body>
     <div class="main">
         <div class="header">
             <div class="headercontent">
-                <ul>
-                    <li>abc</li>
-                </ul>
-                <li class="dropdown">
+              <div style="float:left ;">
+                <img src="./img/logo1.png" alt="">
+              </div>
+                <ul class="">
+                    <li>Nam</li>
+                    <li class="dropdown">
                         <button class="nut_dropdown"><a href="">Nữ</a></button>
                         <div class="noidung_dropdown">
                             <div class="noidung_dropdown">
@@ -101,52 +63,277 @@
                             </div>
                         </div>
                     </li>
+                    <li>Trẻ em</li>
+                    <li>Giới thiệu</li>
+                    <li>Liên hệ</li>
+                    <li class="topmenucontainer1">
+                      <div class="search">
+                          <input type="text" placeholder="Tìm kiếm">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <a><i class="fa-solid fa-user"></i></a>
+                      <a><i class="fa-sharp fa-solid fa-weight-hanging"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
+
         <div class="headernotice"></div>
         <div class="content">
             <div class="item1">
-                <div class="board" >
-                    <img src="./img/cat-san-pham-nam.jpg">
+                <div class="board">
+                  <div>SẢN PHẨM NỮ</div>
+                    <img src="./img/cat-san-pham-nU.jpg">
                 </div>
                 <div class="filters">
-                    <div>abc</div>
-                    <div>abc</div>
-                    <div>abc</div>
-                    <div>abc</div>
+                  <div>
+                  <ul class="">
+                    <li class="dropdown">
+                      <button class="nut_dropdown"><a href="">Danh mục</a></button>
+                      <ul class="noidung_dropdown">
+                        <li><a href="#">Áo</a></li>
+                        <li><a href="#">Quần</a></li>
+                        <li><a href="#">Đồ bộ</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="dropdown">
+                      <button class="nut_dropdown"><a href="">Màu sắc</a></button>
+                      <ul class="noidung_dropdown">
+                        <li><a href="#">đỏ</a></li>
+                        <li><a href="#">cam</a></li>
+                        <li><a href="#">vàng</a></li>
+                        <li><a href="#">lục</a></li>
+                        <li><a href="#">lam</a></li>
+                        <li><a href="#">chàm</a></li>
+                        <li><a href="#">tím</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="dropdown">
+                      <button class="nut_dropdown"><a href="">Kích cỡ</a></button>
+                      <ul class="noidung_dropdown">
+                        <li><a href="#">S</a></li>
+                        <li><a href="#">M</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">XL</a></li>
+                        <li><a href="#">XXL</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="dropdown">
+                      <button class="nut_dropdown"><a href="">Loại</a></button>
+                      <ul class="noidung_dropdown">
+                        <li><a href="#">Cotton</a></li>
+                        <li><a href="#">Jean</a></li>
+                        <li><a href="#">Kaki</a></li>
+                        <li><a href="#">Nỉ</a></li>
+                        <li><a href="#">Len</a></li>
+                        <li><a href="#">Thô</a></li>
+                        <li><a href="#">Voan</a></li>
+                      </ul>
+                    </li>
+                  </div>
                 </div>
             </div>
            
             <div class="listproduct">
-                <ul>
-                    <li>
-                        <img src="./img/test/1.jpg">
+                <ul class="">
+                    <li class="">
+                      <div class="">
+                        <img src="./img/test/aomacnha.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo mặc nhà nữ</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">250000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/aothuncottonusa.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo thun nữ 100% cotton usa</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">150000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/aopolo.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo polo nữ</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">400000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>          
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/quanaomacnhabaloviscose.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">quần áo mặc nhà ba lỗ nữ viscose</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">250000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>                        
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/tanktopnu.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">tank top nữ</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">300000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/aosatnachdri-balance.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo sát nách dri-balance</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">200000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                        <img src="./img/test/1.jpg">
+                      <div class="">
+                        <img src="./img/test/aothunnukengang.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo thun nữ kẻ ngang</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">150000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
                     </li>          
                     <li>
-                        <img src="./img/test/1.jpg">
-                    </li>                        
+                      <div class="">
+                        <img src="./img/test/aoactivedri-balancenucotron.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo active dri-balance nữ cổ tròn</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">300000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="">
+                        <img src="./img/test/aotshirtnucoolmax.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo t shirt nữ cool max</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">350000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="">
+                        <img src="./img/test/aohoodienu.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo hoodie nữ</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">300000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
+                    </li>     
+                    <li>
+                      <div class="">
+                        <img src="./img/test/aokhoacnutaydaicocao.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">áo khoác nữ tay dài cổ cao</h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">250000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
+                    </li>              
+                    <li>
+                      <div class="">
+                        <img src="./img/test/shortmacnha.jpg">
+                      </div>
+                      <div class="content-product">
+                        <h3 class="content-product-h3">quần short nữ mặc nhà </h3>
+                        <div class="content-product-deltals">
+                          <div class="price">
+                            <span class="money">200000đ</span>
+                          </div>
+                          <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                      </div>
+                    </li>     
                 </ul>
           </div>           
         </div>
-        <div class="pages" style="text-align: center;">chỗ để ô trang 1 ,2 ,3 ,....</div>
+        <div class="pages" style="text-align: center;">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+        <div class="pages" style="text-align: center;">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">Áo</a>
+            <a href="#">Quần</a>
+            <a href="#">Đồ bộ</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>
