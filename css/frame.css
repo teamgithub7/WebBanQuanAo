@@ -72,6 +72,164 @@ body{
     box-sizing: border-box;
 }
 
+.topmenu{
+    width: 85%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.topmenu img{
+    float: left;
+}
+
+.topmenucontainer {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 80px;
+}
+
+.topmenu ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+.topmenu li{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 40px;
+}
+
+.topmenu a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topmenucontainer1{
+    float: right;
+    height: 100%;
+    width: auto;
+}
+
+.search{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 40px ;
+    float: left;
+    margin-right: 12px;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    border-bottom:solid 1px #c2c2c2;
+    width: 200px;
+    font-size: 15px;
+}
+
+.topmenucontainer1 a{
+    float: left;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 25px;
+}
+
+.search i{
+    position: absolute;
+    right: 10px;
+}
+
+.headernotice{
+    width: 100%;
+    height: 50px;
+    background-color: #333f48;
+}
+
+.content{
+    height: auto;
+    width: 100%;
+}
+
+.adv{
+    height: 700px;
+    width: 100%;
+}
+
+.adv img{
+    width: 100%;
+    height: 100%;
+}
+
+.itemcontainer{
+    height: 500px;
+    width: 100%;
+}
+
+.itemcontainer ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+
+.itemcontainer li{
+    width: 33%;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.itemcontainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.itemcontainer div{
+    position: absolute;
+    background-color: rgba(69, 67, 67, 0.375);
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+
+.info{
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    display: block;
+}
+
+.info1{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px white;
+    padding: 5px;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.containercontent {
+    font-size: 25px;
+    height: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
 .listproduct{
     height: auto;
@@ -95,7 +253,48 @@ body{
     max-width: 100%;
     height: auto;
 }
+.content-product .content-product-h3 {
+    padding: 8px 16px;
+    overflow: hidden;
+    color: #222;
+    font-weight: 500;
+    font-size: 16px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 19px;
+    margin: 0 0 5px;
+}
 
+.content-product .content-product-deltals {
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+.main-product .content-product .content-product-deltals .price {
+    color: #c7b200;
+    font-weight: 700;
+    margin-right: 1rem;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+  
+  .content-product .content-product-deltals .price .money {
+    vertical-align: middle;
+  }
+  
+  .content-product .content-product-deltals .btn-cart {
+    background: #f1df11;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .content-product .content-product-deltals .btn-cart:hover {
+    background: #c7b200;
+  }
+  
 
 .pages{
     width: 100%;
@@ -108,3 +307,104 @@ body{
     height: 400px;
     background-color: #333f48;
 }
+.page-title-wrapper {
+    display: inline-block;
+    margin: 0;
+}
+.page-title-wrapper {
+    margin-top: 30px;
+}
+    .filters{
+    height: 240px;
+    width: 240px;
+    float: left;
+    margin-left: 100px;
+}
+
+.filters div{
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px rgb(204, 204, 204);;
+    box-sizing: border-box;
+}
+    .filter.block {
+    margin-bottom: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul { list-style-type: none; }
+
+a {
+  text-decoration: none;
+}
+
+/* Nút Dropdown*/
+.nut_dropdown {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nội dung Dropdown */
+.noidung_dropdown {
+  /*Ẩn nội dụng các đường dẫn*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+.noidung_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* thay đổi màu background khi hover vào đường dẫn */
+.noidung_dropdown a:hover {background-color: #ddd;}
+
+/* hiển thị nội dung dropdown khi hover */
+.dropdown:hover .noidung_dropdown {display: block;}
+
+/* Thay đổi màu background cho nút khi được hover */
+.dropdown:hover .nut_dropdown {background-color: #00bfff;}
+
+/*Dùng Để hiển thị nội dung*/
+.hienThi {display:block;}
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 22px;
+  }
+  
