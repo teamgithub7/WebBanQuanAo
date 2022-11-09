@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <script src="./backup1.js"></script>
+
+</head>
+<body onload="show('SPNam')">
+    <div class="main">
+
+        <div class="content">
+            <div class="leftmenu">
+                <div><span onclick="back()">TRỞ VỀ CỬA HÀNG</span></div>
+                <div onclick="show('SPNam')"><span>QUẢN LÝ QUẦN ÁO NAM</span></div>
+                <div onclick="show('SPNu')"><span >QUẢN LÝ QUẦN ÁO NỮ</span></div>
+            
+            </div>
+            <div class="table_content">
+                <div class="title" id="title">DANH MỤC</div>
+                <div class="table_container" id="table_container">
+                    
+                </div>
+                <span class="titleimg">HÌNH ẢNH SẢN PHẨM</span>
+                <div class="showimg" id="img">      
+
+                </div>
+                <div class="choose_img">
+                    <input type="file" id="file-id" name="file_name" onchange="showimage();" accept="image/*">  
+                    
+                </div>
+                <div class="add_table">                 
+                    <ul>
+                        <li>Mã sản phẩm</li>
+                        <li>Tên sản phẩm</li>
+                        <li>Loại</li>
+                        <li>Thương hiệu</li>                      
+                        <li>Giá</li>
+                    </ul>                   
+                   
+                    <ul>
+                        <li><input type="text" id="add_id" readonly></li>
+                        <li><input id="name" type="text" placeholder="Nhập tên sản phẩm"></li>
+                        <li>
+                            <select name="type" id="type">
+                                <option value="top">Áo</option>
+                                <option value="bot">Quần</option>   
+                              </select>
+                        </li>
+                        <li>
+                            <select name="brand" id="brand">
+                                <option value="Gucci" >Guci</option>
+                                <option value="Yame" >Yame</option>
+                                <option value="Dirty coins" >Dirty Coins</option>
+                                <option value="Louis Vutton" >Louis Vutton</option>
+                              </select>
+                        </li>
+                        
+                        <li>
+                            <input type="text" placeholder="Nhập giá sản phẩm" id="price">
+                        </li>
+                        <input type="button" value="Thêm sản phẩm" style="float: left; margin-top: 10px;" onclick="add()"> 
+                        <input type="button" value="Sửa sản phẩm" style="float: left; margin-top: 10px;"  onclick="fix()">
+                        <input type="button" value="Xóa sản phẩm" style="float: left; margin-top: 10px;"  onclick="del()"> 
+                        <th></th>
+                    </ul>                          
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
