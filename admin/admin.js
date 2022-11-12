@@ -110,7 +110,6 @@ function showinfo(id){
 }
 
 function add(){
-    document.getElementById("add_id").value = "";
     var danhmuc = String(sessionStorage.getItem("choose"))
     var idcur ;
     var arr ;
@@ -150,6 +149,8 @@ function add(){
 products.push(product);
 localStorage.setItem(arr, JSON.stringify(products));
 show(danhmuc)
+
+document.getElementById("add_id").value = "";
 }
 
 function fix(){
@@ -182,9 +183,10 @@ function fix(){
             break;
         }
     }
-    document.getElementById("add_id").value = "";
     localStorage.setItem(arr, JSON.stringify(list_Product));
     show(danhmuc);
+
+    document.getElementById("add_id").value = "";
 }
 
 function del(){
@@ -213,9 +215,10 @@ function del(){
             break;
         }
     }
-    document.getElementById("add_id").value = "";
     localStorage.setItem(arr, JSON.stringify(list_Product));
     show(danhmuc);
+
+    document.getElementById("add_id").value = "";
 }
 
 

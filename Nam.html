@@ -9,64 +9,42 @@
     <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./css/mainpages.css">  
 </head>
-<body onload="initPage('SPNu')">
+<body onload="loadPage('DSSPNam')">
     <div class="main">
         <div class="header">
             <div class="topmenu">
                 <img src="./img/logo/logo1.png">
                 <div class="topmenu-container">
                     <ul>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropdown-content">
-                                    <a href="./page1.html" style="text-decoration: none;">QUẦN ÁO</a>
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">ÁO</a>
-                                </div>
-                                <a href="">
-                                    NAM                                  
-                                </a>
-                            </div>
+                        <li class="dropdown">
+                            <a>NAM</a>
+                            <div class="dropdown-content">
+                                <a href="#">ÁO</a>
+                                <a href="#">QUẦN</a>
+                              </div>
+                          
                         </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropdown-content">
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">ÁO</a>
-                                </div>
-                                <a href="">
-                                    NỮ                                  
-                                </a>
-                            </div>
+                        <li class="dropdown">
+                            <a>NỮ</a>
+                            <div class="dropdown-content">
+                                <a href="#">ÁO</a>
+                                <a href="#">QUẦN</a>
+                              </div>
+                          
                         </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropdown-content">
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
-                                </div>
-                                <a href="">
-                                    TRẺ EM                                  
-                                </a>
-                            </div>
+                        <li class="dropdown">
+                            <a>UNISEX</a>
+                            <div class="dropdown-content">
+                                <a href="#">ÁO</a>
+                                <a href="#">QUẦN</a>
+                              </div>
+                          
                         </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropdown-content">
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
-                                </div>
-                                <a href="">
-                                    GIỚI THIỆU                                  
-                                </a>
-                            </div>
+                        <li class="dropdown">
+                            <a>GIỚI THIỆU</a>                          
                         </li>
-                        <li>
-                            <div class="dropdown">
-                                <div class="dropdown-content">
-                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
-                                </div>
-                                <a href="">
-                                    LIÊN HỆ                                  
-                                </a>
-                            </div>
+                        <li class="dropdown">
+                            <a>LIÊN HỆ</a>                           
                         </li>
                     </ul>
                 </div>
@@ -102,20 +80,13 @@
                         <div class="amount"><span onclick="amount1()">Áo</span></div>    
                     </div>         
                     
+                                     
                     <div class="filter">
-                        <span>Màu sắc:</span>                    
-                        <span class="box" style="background-color: red;"></span> 
-                        <span class="box" style="background-color: yellow;"></span>         
-                        <span class="box" style="background-color: blue;"></span> 
-                        <span class="box" style="background-color: black;"></span>      
-                    </div>          
-                    
-                    <div class="filter">
-                        <span>Size:</span>    
-                        <div class="box"><span>S</span></div>                
-                        <div class="box"><span>ML</span></div>         
-                        <div class="box"><span>L</span></div> 
-                        <div class="box"><span>XL</span></div>      
+                        <span>Thương hiệu:</span>    
+                        <div class="amount"><span onclick="amount1()">YAME</span></div>   
+                        <div class="amount"><span onclick="amount2()">GUCCI</span></div>     
+                        <div class="amount"><span onclick="amount3()">LOUIS VUTTON</span></div>                       
+                        <div class="amount"><span onclick="amount4()">KHÁC</span></div>                     
                     </div>      
                 </div>
 
@@ -131,7 +102,52 @@
                 </ul>
            </div>
         </div>
-        <div class="footer"></div>
+        <footer class="footer">
+            <div class="container"> 
+                <div class="thongtin">
+                    <h2 style="margin-left: 45px;">2N2Mstore</h2>
+                    <ul class="info">
+                        
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>26 Hồng Bàng, Phường 15,</br> Quận 10, TP.Hồ Chí Minh</span></br>
+                            <span><i class="fa fa-phone"></i></span>
+                            <span>(84+) 954362413</span></br>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span>2N2Mstore@gmail.com</span>   
+                    </ul>
+                </div>
+
+                <div class="noidungsanpham">
+                    <h2>Sản phẩm</h2>
+                    <ul style="font-size: 150%;">
+                        <a>> Quần áo Nam</a></br>
+                        <a>> Quần áo Nữ</a></br>
+                        <a>> Quần áo Unisex</a>
+                    </ul>
+                </div>
+
+                <div class="chinhsach">
+                    <h2>Chính sách</h2>
+                    <ul style="font-size: 150%;">
+                        <a>> Bảo mật thanh toán</a></br>
+                        <a>> Bảo mật thông tin cá nhân</a></br>
+                        <a>> Giải quyết khiếu nại</a>
+                    </ul>
+                </div>
+
+
+                <div class="thanhtoan">
+                        <h2 >Thông tin</h2>
+                            <ul style="font-size: 150%;">
+                                <a>> Giới thiệu </a></br>
+                                <a>> Liên hệ</a></br>
+                                <a>> Tuyển dụng</a>
+                            </ul>
+                </div>
+            </div>
+        </footer>
+
     </div>
+    
 </body>
 </html>
