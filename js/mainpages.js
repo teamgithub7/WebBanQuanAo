@@ -32,7 +32,7 @@ function loadPage(){
         else{
             if(type == "All")
             {
-                 s = s + "<li><img src=\"" + list_Product[j].img + "\" ></li>"; 
+                 s = s + "<li><img src=\"" + list_Product[j].img + "\"  onclick=\"" + "details_product('" + list_Product[j].id + "')" + "\"></li>"; 
                  i++;
             }
             else if(type == "Áo" && list_Product[j].type == "Áo")
@@ -141,3 +141,7 @@ function page(cur,dssp,n){
    
 }
 
+function details_product(id){
+    sessionStorage.setItem("id",id)
+    //window.location.href = "../trangchu.html";
+}
