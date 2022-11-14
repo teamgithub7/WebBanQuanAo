@@ -10,11 +10,13 @@ btn.forEach(function(button,index){
         var productImg = product.querySelector(".imgsp").src
         var productName = product.querySelector(".namesp").innerText
         var productGia = product.querySelector('.giasp').innerText
-        addGH(productGia,productImg,productName)
+        var productSl = product.querySelector('input').value
+        console.log(productSl)
+        addGH(productGia,productImg,productName,productSl)
     }})
 })
 //------------thêm sp--------------
-function addGH(productGia,productImg,productName){
+function addGH(productGia,productImg,productName,productSl){
     var addtr = document.createElement("tr")
     var ghItem = document.querySelectorAll("tbody tr")
     for(var i = 0; i < ghItem.length; i++){
@@ -26,7 +28,7 @@ function addGH(productGia,productImg,productName){
             return
         }
     }
-    var trcontent = '<tr>   <td data-th="Product" >     <div class="row">       <div class="img-sp"><img src="'+productImg+'"  width="100"></div>        <div class="sp">          <h4 >'+productName+'</h4>        </div>      </div>    </td>  <td class="giasp_1" >'+productGia+'</td>  <td ><input id="slsp" style="width: 50px; height: 20px;"  value="1" min="1" type="number"> </td>  <td class="thanh_tien">   300.000  </td>    <td class="actions" >  <button class="bt-Delete" >Delete</button>    </td>   </tr>'
+    var trcontent = '<tr>   <td data-th="Product" >     <div class="row">       <div class="img-sp"><img src="'+productImg+'"  width="100"></div>        <div class="sp">          <h4 >'+productName+'</h4>        </div>      </div>    </td>  <td class="giasp_1" >'+productGia+'</td>  <td ><input id="slsp" style="width: 50px; height: 20px;"  value="'+productSl+'" min="1" type="number"> </td>  <td class="thanh_tien">   300.000  </td>    <td class="actions" >  <button class="bt-Delete" >Delete</button>    </td>   </tr>'
     addtr.innerHTML = trcontent
     var ghTable = document.querySelector("tbody")
     ghTable.append(addtr)
