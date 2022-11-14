@@ -14,10 +14,10 @@
 
         <div class="content">
             <div class="leftmenu">
-                <div><span onclick="back()">TRỞ VỀ CỬA HÀNG</span></div>
+                <div onclick="back()"><span>TRỞ VỀ CỬA HÀNG</span></div>
                 <div onclick="show('SPNam')"><span>QUẢN LÝ QUẦN ÁO NAM</span></div>
-                <div onclick="show('SPNu')"><span >QUẢN LÝ QUẦN ÁO NỮ</span></div>
-            
+                <div onclick="show('SPNu')"><span>QUẢN LÝ QUẦN ÁO NỮ</span></div>
+                <div onclick="show('SPUnisex')"><span >QUẢN LÝ QUẦN ÁO UNISEX</span></div>          
             </div>
             <div class="table_content">
                 <div class="title" id="title">DANH MỤC</div>
@@ -46,15 +46,15 @@
                             </div>
                             <div class="item2">
                                 <select name="type" id="type">
-                                    <option value="top">Áo</option>
-                                    <option value="bot">Quần</option>   
+                                    <option value="Áo">Áo</option>
+                                    <option value="Quần">Quần</option>   
                                   </select>
                             </div>
                         </div>
 
                         <div class="container_item" style="margin-top: 20px;">
                             <div class="item1" style="border: none;">
-                                <input type="button" value="Thêm sản phẩm" onclick="add()" > 
+                                <input class="add_btn" type="button" value="THÊM SP" onclick="add()"> 
                             </div>                         
                         </div>
 
@@ -84,7 +84,7 @@
 
                         <div class="container_item">
                             <div class="item1" style="border: none;">
-                                <input type="button" value="Sửa sản phẩm" onclick="fix()" >
+                                <input class="fix_btn" type="button" value="SỬA SP" onclick="fix()">
                             </div>                         
                         </div>
                         
@@ -99,9 +99,11 @@
 
                         <div class="container_item" style="margin-right: 15px;">
                             <div class="item1" style="border: none;">
-                                <input type="button" value="Xóa sản phẩm"  onclick="del()"> 
+                                <input class="del_btn" type="button" value="XÓA SP"  onclick="del()"> 
                             </div>                         
                         </div>
+                        
+
                         
                     </div>      
                     <div class="add_fix_img">

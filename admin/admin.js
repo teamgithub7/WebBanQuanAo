@@ -2,8 +2,11 @@ localStorage.setItem("DSSPNu",Number(0))
 localStorage.setItem("idNu",Number(0));
 localStorage.setItem("DSSPNam",Number(0))
 localStorage.setItem("idNam",Number(0));
+localStorage.setItem("DSSPUnisex",Number(0))
+localStorage.setItem("idUnisex",Number(0));
 sessionStorage.setItem("choose","SPNam")
-
+localStorage.removeItem("DSSPBeTrai");
+localStorage.removeItem("idBeGai")
 
 function show(danhmucsp){
     var danhmuc = String(danhmucsp);
@@ -21,6 +24,12 @@ function show(danhmucsp){
             arr = "DSSPNu"
             s="DANH MỤC NỮ";
             idtable = "tableNu";
+            sessionStorage.setItem("idtable",idtable)
+            break;
+        case 'SPUnisex':
+            arr = "DSSPUnisex"
+            s="DANH MỤC UNISEX";
+            idtable = "tableUnisex";
             sessionStorage.setItem("idtable",idtable)
             break;
         default:
@@ -90,6 +99,8 @@ function showinfo(id){
         case 'SPNu':
             arr = "DSSPNu"
             break;
+        case 'SPUnisex':
+            arr = "DSSPUnisex"
         default:
             break;
     }
@@ -134,6 +145,12 @@ function add(){
             id = Number(idcur +1);
             localStorage.setItem("idNu",id)
             break;
+        case 'SPUnisex':
+            idcur = Number(localStorage.getItem("idUnisex"));
+            arr = "DSSPUnisex"
+            id = Number(idcur +1);
+            localStorage.setItem("idUnisex",id)
+            break;
         default:
             break;
     }
@@ -168,6 +185,9 @@ function fix(){
             break;
         case 'SPNu':
             arr = "DSSPNu"
+            break;
+        case 'SPUnisex':
+            arr = "DSSPUnisex"
             break;
         default:
             break;
