@@ -1,15 +1,57 @@
-function loadPage(){
+function setType(type_product,dssp){
+    sessionStorage.setItem("type_product",String(type_product));
+    sessionStorage.setItem("choose",String(dssp));
+}
+
+function getList(){
     var dssp = String(sessionStorage.getItem("choose"))
-    var s = ""
-    var pages = "";
-    var products_1_page = 8;
     var list_Product = JSON.parse(localStorage.getItem(dssp));
-    var n = number_products(list_Product);
-    var m = Number(n) % 8;
     var type = String(sessionStorage.getItem("type_product"));
 
-    type_product_page(String(dssp));
+    var list = [];
 
+    for(let i=0;i<list_Product.length;i++)
+    {
+        if(list_Product[i].type == type)
+        {
+            list.push(list_Product[i]);
+        }
+        if(type == "All")
+        {
+            list.push(list_Product[i]);
+        }
+    }
+    localStorage.setItem("list", JSON.stringify(list));
+    return list;
+}
+
+function loadPage()
+{
+    var list = [];
+    list = getList();
+    loadProducts(list);
+}
+
+function inner_pages(m,n)
+{
+    var pages = "";
+    var dssp = String(sessionStorage.getItem("choose"))
+    for(let i=0 ;i < m ;i++){
+        var page = "page"+"(\'" + String(i+1) +"\'" + ",\'" + dssp +"\'"  + ",\'" + n +"\'" +")";
+        pages = pages + " <li><a "  + " onclick=\"" + page + "\">"+(i+1)+"</a></li>"
+    }
+    return pages;
+}
+
+function loadProducts(list){
+    var s = ""
+    var pages ;
+    var products_1_page = 8;
+    var list_Product = list;
+    var n = list_Product.length;
+    var m = Number(n) % 8;
+
+    type_product_page();   
 
     if(m === 0){
         m = Number(n) / 8;
@@ -17,66 +59,28 @@ function loadPage(){
     else{
         m = Math.floor( (Number(n) / 8) + 1);
     }
+    
+    pages = inner_pages(m,n);
 
-    for(let i=0 ;i < m ;i++){
-        var page = "page"+"(\'" + String(i+1) +"\'" + ",\'" + dssp +"\'"  + ",\'" + n +"\'" +")";
-        pages = pages + " <li><a "  + " onclick=\"" + page + "\">"+(i+1)+"</a></li>"
-    }
-
-    var i=0;
-    var j=0;
-    while(i<8){
+    for(let i=0;i<8;i++)
+    {
         if(i == n){
             break;
         }
-        else{
-            if(type == "All")
-            {
-                 s = s + "<li><img src=\"" + list_Product[j].img + "\"  onclick=\"" + "details_product('" + list_Product[j].id + "')" + "\"></li>"; 
-                 i++;
-            }
-            else if(type == "Áo" && list_Product[j].type == "Áo")
-            {
-                s = s + "<li><img src=\"" + list_Product[j].img + "\" ></li>";
-                i++;
-            }
-            else if(type == "Quần" && list_Product[j].type == "Quần")
-            {
-                s = s + "<li><img src=\"" + list_Product[j].img + "\" ></li>";
-                i++;
-            }
+        else{         
+                 s = s + "<li><img src=\"" + list_Product[i].img + "\"  onclick=\"" + "details_product('" + list_Product[i].id + "')" + "\">" 
+                 s = s + " <div class=\"name_price\"><span class=\"name\">"+ list_Product[i].name + "</span>";
+                 s = s + "<span class=\"price\">"+ list_Product[i].price +"đ</span></div>" + "</li>";   
         }
-        j++;
     }
-    console.log(s);
+
     document.getElementById('pages').innerHTML = pages
     document.getElementById('list-products').innerHTML = s
 }
 
-
-function number_products(list_Product){
-    var n = Number(0);
-    var s = String(sessionStorage.getItem("type_product"))
-
-    if(s=="All")
-    {
-        return list_Product.length;
-    }
-
-    for(let i=0;i<list_Product.length;i++)
-    {
-        if( String(list_Product[i].type) == s )
-        {
-            n++;
-        }
-    }
-    console.log(n);
-    return n;
-}
-
-
-function type_product_page(dssp)
+function type_product_page()
 {
+    var dssp = String(sessionStorage.getItem("choose"))
     var s ="";
     switch (dssp){
         case "DSSPNam":
@@ -111,34 +115,21 @@ function type_product_page(dssp)
 
 function page(cur,dssp,n){
     var max = cur * 8 ;
-    var min = max -7;
+    var min = max - 8;
     var s = ""
-    var type_product = String(sessionStorage.getItem("type_product"));
-    var list_Product = JSON.parse(localStorage.getItem(dssp));
-    var list_Product_type =[];
-
-    for(let i=0;i<list_Product.length;i++)
-    {
-        if(list_Product[i].type == type_product){
-            list_Product_type.push(list_Product[i]);
-        }
-        else if(type_product == "All")
-        {
-            list_Product_type.push(list_Product[i]);
-        }
-    }
-
+    var list_Product =[];
+    list_Product = getList();
     var MAXProducts = n;
-    for(let i=min;i<=max;i++){     
+    for(let i= min ; i < max;i++){     
         if(i == MAXProducts)
         {
             break;
         }
-        s = s + "<li><img src=\"" + list_Product_type[i].img + "\"></li>";
+        s = s + "<li><img src=\"" + list_Product[i].img + "\"  onclick=\"" + "details_product('" + list_Product[i].id + "')" + "\">" 
+        s = s + " <div class=\"name_price\"><span class=\"name\">"+ list_Product[i].name + "</span>";
+        s = s + "<span class=\"price\">"+ list_Product[i].price +"đ</span></div>" + "</li>";   
     }
     document.getElementById('list-products').innerHTML = s
-
-   
 }
 
 function details_product(id){

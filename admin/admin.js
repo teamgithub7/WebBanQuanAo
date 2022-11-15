@@ -4,46 +4,42 @@ localStorage.setItem("DSSPNam",Number(0))
 localStorage.setItem("idNam",Number(0));
 localStorage.setItem("DSSPUnisex",Number(0))
 localStorage.setItem("idUnisex",Number(0));
-sessionStorage.setItem("choose","SPNam")
-localStorage.removeItem("DSSPBeTrai");
-localStorage.removeItem("idBeGai")
+localStorage.setItem("choose_admin","DSSPNam")
 
-function show(danhmucsp){
-    var danhmuc = String(danhmucsp);
-    var arr="" ;
+
+function show(danhmuc){
     var s=""
     var newhtml ="";
     switch (danhmuc){
-        case 'SPNam':
-            arr = "DSSPNam"
-            s="DANH MỤC NAM";
+        case 'DSSPNam':
+            s = "DANH MỤC NAM";
             idtable = "tableNam";
-            sessionStorage.setItem("idtable",idtable)
+            localStorage.setItem("idtable",idtable)
             break;
-        case 'SPNu':
-            arr = "DSSPNu"
-            s="DANH MỤC NỮ";
+        case 'DSSPNu':
+            s = "DANH MỤC NỮ";
             idtable = "tableNu";
-            sessionStorage.setItem("idtable",idtable)
+            localStorage.setItem("idtable",idtable)
             break;
-        case 'SPUnisex':
-            arr = "DSSPUnisex"
-            s="DANH MỤC UNISEX";
+        case 'DSSPUnisex':
+            s = "DANH MỤC UNISEX";
             idtable = "tableUnisex";
-            sessionStorage.setItem("idtable",idtable)
+            localStorage.setItem("idtable",idtable)
             break;
         default:
             break;
     }
-    sessionStorage.setItem("choose",String(danhmuc));
+
+    localStorage.setItem("choose_admin",String(danhmuc));
     document.getElementById('title').innerText = s;
 
-    var idtable = sessionStorage.getItem("idtable");
-    var list_Product = JSON.parse(localStorage.getItem(arr));
+    var idtable = localStorage.getItem("idtable");
+    var list_Product = JSON.parse(localStorage.getItem(String(danhmuc)));
 
     var innerTable = "<table id=\"" + idtable +"\">";
     innerTable = innerTable + title_col() + "</table>";
     document.getElementById('table_container').innerHTML = innerTable;
+
     if(list_Product.length != undefined || list_Product.length == Number){
     for(let i=0;i<list_Product.length;i++){
         newhtml = newhtml + "<tr>"
@@ -75,7 +71,7 @@ function title_col(){
 
 function getfullPath(){
     var filename = document.getElementById("file-id").files[0].name; 
-    var foldername = sessionStorage.getItem("choose");
+    var foldername = localStorage.getItem("choose_admin");
     var fullpath = "../img/" + foldername + "/" + filename;
     return fullpath;
 }
@@ -90,21 +86,8 @@ function back(){
 }
 
 function showinfo(id){
-    var danhmuc = String(sessionStorage.getItem("choose"))
-    var arr ;
-    switch (danhmuc){
-        case 'SPNam':
-            arr = "DSSPNam"
-            break;
-        case 'SPNu':
-            arr = "DSSPNu"
-            break;
-        case 'SPUnisex':
-            arr = "DSSPUnisex"
-        default:
-            break;
-    }
-    var list_Product = JSON.parse(localStorage.getItem(arr));
+    var danhmuc = String(localStorage.getItem("choose_admin"))
+    var list_Product = JSON.parse(localStorage.getItem(danhmuc));
     for(let i=0;i<list_Product.length;i++){
         if(list_Product[i].id == id){
             document.getElementById("add_id").value = id;
@@ -117,13 +100,11 @@ function showinfo(id){
             break;
         }
     }
-    show(danhmuc);
 }
 
 function add(){
-    var danhmuc = String(sessionStorage.getItem("choose"))
+    var danhmuc = String(localStorage.getItem("choose_admin"))
     var idcur ;
-    var arr ;
 
     var id ;
     var name = document.getElementById("name").value;
@@ -133,21 +114,18 @@ function add(){
     var img = getfullPath();
 
     switch (danhmuc){
-        case 'SPNam':
+        case 'DSSPNam':
             idcur = Number(localStorage.getItem("idNam"));
-            arr = "DSSPNam"
             id = Number(idcur +1);
             localStorage.setItem("idNam",id)
             break;
-        case 'SPNu':
+        case 'DSSPNu':
             idcur = Number(localStorage.getItem("idNu"));
-            arr = "DSSPNu"
             id = Number(idcur +1);
             localStorage.setItem("idNu",id)
             break;
-        case 'SPUnisex':
+        case 'DSSPUnisex':
             idcur = Number(localStorage.getItem("idUnisex"));
-            arr = "DSSPUnisex"
             id = Number(idcur +1);
             localStorage.setItem("idUnisex",id)
             break;
@@ -155,7 +133,7 @@ function add(){
             break;
     }
 
- var list_Product = JSON.parse(localStorage.getItem(arr));
+ var list_Product = JSON.parse(localStorage.getItem(danhmuc));
  var products = [];
  let product = {"id":id,"name":name, "type":type, "brand":brand, "price":price, "img":img}
 
@@ -164,35 +142,22 @@ function add(){
 }
 
 products.push(product);
-localStorage.setItem(arr, JSON.stringify(products));
+localStorage.setItem(String(danhmuc), JSON.stringify(products));
 show(danhmuc)
 
 document.getElementById("add_id").value = "";
 }
 
 function fix(){
-             var id    = document.getElementById("add_id").value ;
-             var name  = document.getElementById("name").value
-             var type  = document.getElementById("type").value 
-             var brand = document.getElementById("brand").value 
-             var price = document.getElementById("price").value 
-             var img_path = getfullPath();
-    var danhmuc = String(sessionStorage.getItem("choose"))
-    var arr ;
-    switch (danhmuc){
-        case 'SPNam':
-            arr = "DSSPNam"
-            break;
-        case 'SPNu':
-            arr = "DSSPNu"
-            break;
-        case 'SPUnisex':
-            arr = "DSSPUnisex"
-            break;
-        default:
-            break;
-    }
-    var list_Product = JSON.parse(localStorage.getItem(arr));
+    var id    = document.getElementById("add_id").value ;
+    var name  = document.getElementById("name").value
+    var type  = document.getElementById("type").value 
+    var brand = document.getElementById("brand").value 
+    var price = document.getElementById("price").value 
+    var img_path = getfullPath();
+    var danhmuc = String(localStorage.getItem("choose_admin"))
+    
+    var list_Product = JSON.parse(localStorage.getItem(danhmuc));
     for(let i=0;i<list_Product.length;i++){
         if(list_Product[i].id == id){
             list_Product[i].name = name;
@@ -203,39 +168,28 @@ function fix(){
             break;
         }
     }
-    localStorage.setItem(arr, JSON.stringify(list_Product));
+    localStorage.setItem(String(danhmuc), JSON.stringify(list_Product));
     show(danhmuc);
 
     document.getElementById("add_id").value = "";
 }
 
 function del(){
-    var id    = document.getElementById("add_id").value ;
-             var name  = document.getElementById("name").value
-             var type  = document.getElementById("type").value 
-             var brand = document.getElementById("brand").value 
-             var price = document.getElementById("price").value 
-             var img_path = getfullPath();
-    var danhmuc = String(sessionStorage.getItem("choose"))
-    var arr ;
-    switch (danhmuc){
-        case 'SPNam':
-            arr = "DSSPNam"
-            break;
-        case 'SPNu':
-            arr = "DSSPNu"
-            break;
-        default:
-            break;
-    }
-    var list_Product = JSON.parse(localStorage.getItem(arr));
+    var id = document.getElementById("add_id").value ;
+    var name  = document.getElementById("name").value
+    var type  = document.getElementById("type").value 
+    var brand = document.getElementById("brand").value 
+    var price = document.getElementById("price").value 
+    var img_path = getfullPath();
+    var danhmuc = String(localStorage.getItem("choose_admin"))
+    var list_Product = JSON.parse(localStorage.getItem(danhmuc));
     for(let i=0;i<list_Product.length;i++){
         if(list_Product[i].id == id){
             list_Product.splice(i,1);         
             break;
         }
     }
-    localStorage.setItem(arr, JSON.stringify(list_Product));
+    localStorage.setItem(String(danhmuc), JSON.stringify(list_Product));
     show(danhmuc);
 
     document.getElementById("add_id").value = "";
