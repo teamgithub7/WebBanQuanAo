@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./css/mainpages.css">  
 </head>
-<body onload="loadPage()">
+<body onload="loadPage('1')">
     <div class="main">
         <div class="header">
             <div class="topmenu">
@@ -50,8 +50,8 @@
                 </div>
                 <div class="topmenu-container1">
                     <div class="search">
-                        <input type="text" placeholder="Tìm kiếm">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm" id="search_bar">
+                        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
                     </div>
                     <a href="./login.html"><i class="fa-solid fa-user"></i></a>
                     <a href="#"><i class="fa-sharp fa-solid fa-weight-hanging"></i></a>
@@ -67,26 +67,25 @@
 
                     <div class="filter">
                         <span>Giá:</span> 
-                        <div class="amount"><span onclick="amount1()">Dưới 100.000</span></div>   
-                        <div class="amount"><span onclick="amount2()">100.000 - 200.000</span></div>     
-                        <div class="amount"><span onclick="amount3()">200.000 - 300.000</span></div>                       
-                        <div class="amount"><span onclick="amount4()">300.000 - 500.000</span></div>
-                        <div class="amount"><span onclick="amount5()">Trên 500.000</span></div>      
+                        <div class="amount"><span onclick="Price_Filter('1','1')">100.000 - 200.000</span></div>     
+                        <div class="amount"><span onclick="Price_Filter('2','1')">200.000 - 300.000</span></div>                       
+                        <div class="amount"><span onclick="Price_Filter('3','1')">300.000 - 500.000</span></div>
+                        <div class="amount"><span onclick="Price_Filter('4','1')">Trên 500.000</span></div>      
                     </div>                       
                                        
                     <div class="filter">
                         <span>Loại:</span>          
-                        <div class="amount"><span onclick="amount1()">Quần</span></div>
-                        <div class="amount"><span onclick="amount1()">Áo</span></div>    
+                        <div class="amount"><span onclick="Type_Filter('Quần','1')">Quần</span></div>
+                        <div class="amount"><span onclick="Type_Filter('Áo','1')">Áo</span></div>    
                     </div>         
                     
                                      
-                    <div class="filter">
+                    <div class="filter"> 
                         <span>Thương hiệu:</span>    
-                        <div class="amount"><span onclick="amount1()">YAME</span></div>   
-                        <div class="amount"><span onclick="amount2()">GUCCI</span></div>     
-                        <div class="amount"><span onclick="amount3()">LOUIS VUTTON</span></div>                       
-                        <div class="amount"><span onclick="amount4()">KHÁC</span></div>                     
+                        <div class="amount"><span onclick="Brand_Filter('Yame','1')">YAME</span></div>   
+                        <div class="amount"><span onclick="Brand_Filter('Dirty Coins','1')">DIRTY COINS</span></div>     
+                        <div class="amount"><span onclick="Brand_Filter('5TheWay','1')">5THEWAY</span></div>                       
+                        <div class="amount"><span onclick="Brand_Filter('Levents','1')">LEVENTS</span></div>      
                     </div>      
                 </div>
 

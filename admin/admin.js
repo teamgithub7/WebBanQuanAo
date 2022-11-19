@@ -1,9 +1,9 @@
 localStorage.setItem("DSSPNu",Number(0))
-localStorage.setItem("idNu",Number(0));
+localStorage.setItem("idNu",Number(1000));
 localStorage.setItem("DSSPNam",Number(0))
 localStorage.setItem("idNam",Number(0));
 localStorage.setItem("DSSPUnisex",Number(0))
-localStorage.setItem("idUnisex",Number(0));
+localStorage.setItem("idUnisex",Number(2000));
 localStorage.setItem("choose_admin","DSSPNam")
 
 
@@ -176,11 +176,6 @@ function fix(){
 
 function del(){
     var id = document.getElementById("add_id").value ;
-    var name  = document.getElementById("name").value
-    var type  = document.getElementById("type").value 
-    var brand = document.getElementById("brand").value 
-    var price = document.getElementById("price").value 
-    var img_path = getfullPath();
     var danhmuc = String(localStorage.getItem("choose_admin"))
     var list_Product = JSON.parse(localStorage.getItem(danhmuc));
     for(let i=0;i<list_Product.length;i++){
