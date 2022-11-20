@@ -1,70 +1,19 @@
 const btn = document.querySelectorAll('.add_cart button')
-<<<<<<< HEAD
 //console.log(btn)
 btn.forEach(function(button,index){
     button.addEventListener("click", function(event){{
         var btnItem = event.target
         var product = btnItem.parentElement
-=======
-console.log(btn)
-btn.forEach(function(button,index){
-    button.addEventListener("click", function(event){{
-        var btnItem = event.target
-        var product = btnItem.parentElement.parentElement
->>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
         var productId = document.getElementById('detail_id_product').innerText
         var productName = document.getElementById('detail_name_product').innerText
         var productImg = document.getElementById('detail_img_product').src
         var productGia = document.getElementById('price').innerText
-<<<<<<< HEAD
         var productSl = document.querySelector('.amount input').value
         //console.log(productId,productGia,productImg,productName,productSl)
-=======
-        var productSl = product.querySelector('.amount input').value
-        //console.log(productId,productName, productImg, productGia, productSl)
->>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
         addlocal(productId,productGia,productImg,productName,productSl)
     }})
 })
 
-<<<<<<< HEAD
-=======
-function addlocal(productId,productGia,productImg,productName,productSl){
-    let product = localStorage.getItem('gioHang') ?  JSON.parse(localStorage.getItem('gioHang')) : []
-    if(product.length === 0) {
-        //console.log('vao if dau')
-        // Nếu chưa có sp thì add luôn vào local
-        product.push({productId,productGia,productImg,productName,productSl})
-        localStorage.setItem('gioHang', JSON.stringify(product))
-    }
-    else if(product.length !== 0) {
-        var temp = 0
-    for(var i = 0; i < product.length; i++){
-        if(productId === product[i].productId)
-        { 
-            //console.log('vao if')
-            temp = temp + 1
-            var Sl = Number(product[i].productSl)
-            console.log('sl doc dc ',Sl)
-            product.splice(i,1)
-            localStorage.setItem('gioHang', JSON.stringify(product))
-            Sl = Sl + 1
-            console.log('sl',Sl)
-            productSl = String(Sl)
-            product.push({productId,productGia,productImg,productName,productSl})
-            localStorage.setItem('gioHang', JSON.stringify(product)) 
-            break    
-        }           
-    } 
-    if(temp == 0){
-        //-khong tim duoc là sp mới add vào dssp
-        //console.log('vao else')
-        product.push({productId,productGia,productImg,productName,productSl})
-        localStorage.setItem('gioHang', JSON.stringify(product))
-    }     
-    }
-}
->>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
 function loadPage()
 {
     var id = Number(localStorage.getItem("ctsp"));
@@ -108,7 +57,6 @@ function increase(){
     
 }
 
-<<<<<<< HEAD
 
 function addlocal(productId,productGia,productImg,productName,productSl){
     let product = localStorage.getItem('gioHang') ?  JSON.parse(localStorage.getItem('gioHang')) : []
@@ -145,5 +93,3 @@ function addlocal(productId,productGia,productImg,productName,productSl){
     }     
     }
 }
-=======
->>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
