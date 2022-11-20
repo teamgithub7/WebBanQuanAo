@@ -7,7 +7,47 @@ ul, li{
     margin:0px;
     padding:0px;
     }
+<<<<<<< HEAD
 
+=======
+.header{
+    height: 100px;
+    background: rgb(76, 222, 76);
+    display: grid;
+	grid-template-columns: 10% 60% 20% 5% 5%;
+    text-align: center;
+    line-height: 100px;
+
+}
+.logo{
+
+}
+.header ul {
+    height: 100px;
+    }
+.header ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+	height:30px;
+    margin-inline: 20px;
+    margin-top: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+.header ul li:hover{
+     background-color: rgb(165, 157, 145);
+}
+.header input {
+    margin-top: 30px;;
+    height: 30px;
+    border-radius: 2px;
+    border-bottom-color: #7c3737;
+    border-width: 0 0 1px;
+}
+/*-----------Noi Dung----------*/
+>>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
 tr{
     text-align: center;
 }
@@ -46,6 +86,7 @@ tr{
     text-align: left;
 }
 .bt-Delete{
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     border: white;
@@ -55,6 +96,16 @@ tr{
 .bt-Delete:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(143, 134, 134);
+=======
+    color: #ddd;
+    padding: 5px 10px;
+    border: white;
+    border-radius: 5px  ;
+    background-color: rgb(109, 118, 17);
+}
+.bt-Delete:hover{
+    background-color: #cdc60d;
+>>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
 }
 .mua{
     color: #ddd;
@@ -62,8 +113,55 @@ tr{
     padding: 10px 20px;
     border: white;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color: tomato;
 }
 .mua:hover{
     background-color: rgb(207, 139, 13);
 }
+=======
+    background-color: rgb(19, 187, 55);
+}
+.mua:hover{
+    background-color: #2b7c4c;
+}
+/*---------------sp demo---------------*/
+.hh-box
+{
+border-radius: 5px; box-shadow: 0 0 5px silver; 
+position:relative; display: inline-block; 
+margin:25px 5px 5px 5px; padding: 15px 0px;
+text-align:center; width:200px;
+}
+.hh-box:hover
+{
+box-shadow: 0 0 5px red;
+}
+.hh-box-image 
+{
+width:130px; height:130px; 
+}
+.hh-box-icon
+{
+position:absolute; top:0px; right:0px;
+}
+.hh-box-name
+{
+position:absolute; left:0px; top:-20px; 
+width: inherit; text-align:center;
+}
+.hh-box-price 
+{
+position:absolute; left:8px; bottom:8px;
+font-weight:bold; color:silver;
+}
+.hh-box-actions 
+{
+position:absolute; right:8px; bottom:5px; width:25px; 
+}
+.hh-box-actions img 
+{
+cursor:pointer; border:0px; 
+}
+/* --------------giỏ hàng sang thanh bên------------------- */
+>>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
