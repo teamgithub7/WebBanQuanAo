@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GioHang</title>
+    
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/mainpages.css">  
+    <link rel="stylesheet" href="./css/GioHang.css">
+    
+</head>
+<body onload="loadgh()" >
+    <div class="main">
+        <div class="header">
+            <div class="topmenu">
+                <img src="./img/logo/logo1.png">
+                <div class="topmenu-container">
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <a href="./page1.html" style="text-decoration: none;">QUẦN ÁO</a>
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">ÁO</a>
+                                </div>
+                                <a href="">
+                                    NAM                                  
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">ÁO</a>
+                                </div>
+                                <a href="">
+                                    NỮ                                  
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-ccontent">
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
+                                </div>
+                                <a href="">
+                                    TRẺ EM                                  
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
+                                </div>
+                                <a href="">
+                                    GIỚI THIỆU                                  
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <a href="./page1.html" style="border: none;text-decoration: none;">QUẦN ÁO</a>
+                                </div>
+                                <a href="">
+                                    LIÊN HỆ                                  
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topmenu-container1">
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="./test.html"><i class="fa-sharp fa-solid fa-weight-hanging"></i></a>
+                </div>
+            </div>
+            <div class="header-notice">
+              <h1>Giỏ hàng</h1>
+            </div>
+        </div>
+
+        <div class="content">         
+            <div class="container"> 
+                <table id="cart" class=" table-main"> 
+                  <thead> 
+                  <tr> 
+                    <th style="width:50%">Tên sản phẩm</th> 
+                    <th style="width:10%">Giá</th> 
+                    <th style="width:8%">Số lượng</th> 
+                    <th style="width:22%" class="text-center">Thành tiền</th> 
+                    <th style="width:10%"> </th> 
+                  </tr> 
+                  </thead> 
+                  <tbody >
+                    <!-- <tr> 
+                      <td data-th="Product" > 
+                        <div class="row"> 
+                          <div class="img-sp"><img src="./img/test/1.jpg"  width="100"></div> 
+                          <input type="text" class="add_id" value="1" readonly style="display: none;">
+                          <div class="sp"> 
+                            <h4 >Sản phẩm 1</h4> 
+                          </div> 
+                        </div> 
+                      </td> 
+                      <td class="giasp_1" >150.000 </td> 
+                      <td ><input id="slsp" style="width: 50px; height: 20px;"  value="2" min="1" max="10" type="number">
+                      </td> 
+                      <td class="thanh_tien">
+                        300.000 
+                      </td> 
+                      <td class="actions" >
+                        <button class="bt-Delete" >Delete</button>
+                      </td> 
+                    </tr> 
+                    <tr> 
+                      <td data-th="Product" > 
+                        <div class="row"> 
+                          <div class="img-sp"><img src="./img/test/2.jpg"  width="100"></div>   
+                          <input type="text" class="add_id" value="1" readonly style="display: none;"><div class="sp"> 
+                            <h4 class="namesp" >Sản phẩm 2</h4> 
+                          </div> 
+                        </div> 
+                      </td> 
+                      <td  class="giasp_1">100.000 </td> 
+                      <td ><input style="width: 50px; height: 20px;"  value="1" min="1" max="10" type="number">
+                      </td> 
+                      </td> 
+                      <td class="thanh_tien" >100.000</td> 
+                      <td class="actions" >
+                        <button class="bt-Delete" >Delete</i></button>
+                      </td> 
+                    </tr>  -->
+                  </tbody> 
+                  <tfoot>
+                    <tr > 
+                      <td><button class="mua"> Tiếp tục mua hàng</button>
+                      </td> 
+                      <td colspan="2" class="hidden-xs"> </td> 
+                      <td >
+                        <p>Tổng tiền <span>0</span> đ</p>
+                      </td> 
+                      <td><button class="mua"> Mua ngay </button>
+                      </td> 
+                    </tr> 
+                  </tfoot> 
+                </table>
+              </div>
+        </div>
+                
+        <div class="pages">
+           <div>
+                <ul id="pages">
+                </ul>
+           </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="./js/GioHang.js"></script>
+</body>
+</html>
