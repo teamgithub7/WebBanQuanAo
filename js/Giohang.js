@@ -1,6 +1,6 @@
 xoagh()
 inpchange()
-
+//1234
 //-----------------chức năng---------------
 const btn = document.querySelectorAll('.demo div button')
 btn.forEach(function(button,index){

@@ -10,6 +10,9 @@ ul, li{
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
 .header{
     height: 100px;
     background: rgb(76, 222, 76);
@@ -48,6 +51,7 @@ ul, li{
 }
 /*-----------Noi Dung----------*/
 >>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
 tr{
     text-align: center;
 }
@@ -87,6 +91,9 @@ tr{
 }
 .bt-Delete{
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     border: white;
@@ -96,6 +103,8 @@ tr{
 .bt-Delete:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(143, 134, 134);
+<<<<<<< HEAD
+=======
 =======
     color: #ddd;
     padding: 5px 10px;
@@ -106,6 +115,7 @@ tr{
 .bt-Delete:hover{
     background-color: #cdc60d;
 >>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
 }
 .mua{
     color: #ddd;
@@ -114,11 +124,16 @@ tr{
     border: white;
     border-radius: 5px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
     background-color: tomato;
 }
 .mua:hover{
     background-color: rgb(207, 139, 13);
 }
+<<<<<<< HEAD
+=======
 =======
     background-color: rgb(19, 187, 55);
 }
@@ -165,3 +180,4 @@ cursor:pointer; border:0px;
 }
 /* --------------giỏ hàng sang thanh bên------------------- */
 >>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e
