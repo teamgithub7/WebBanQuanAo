@@ -72,7 +72,7 @@ function title_col(){
 function getfullPath(){
     var filename = document.getElementById("file-id").files[0].name; 
     var foldername = localStorage.getItem("choose_admin");
-    var fullpath = "../img/" + foldername + "/" + filename;
+    var fullpath = "./img/" + foldername + "/" + filename;
     return fullpath;
 }
 
