@@ -1,5 +1,5 @@
 function checkinadmin(price) {
-    var price = document.getElementById('price');
+    var price = document.getElementById('price').value;
     if (price.value < 0) {
         alert("giá không âm");
         return false;
