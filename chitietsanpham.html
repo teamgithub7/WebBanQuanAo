@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/trangchu.css">
-    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
-    <script src="./js/trangchu.js"></script>
-
-    
     <title>Document</title>
+    
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/chitietsanpham.css">  
 </head>
-<body>
+<body onload="loadPage('2')">
     <div class="main">
         <div class="header">
             <div class="topmenu">
-                <a href="./trangchu.html" ><img src="./img/logo/logo1.png"></a>
+                <img src="./img/logo/logo1.png">
                 <div class="topmenu-container">
                     <ul>
                         <li class="dropdown">
@@ -39,8 +37,7 @@
                             <div class="dropdown-content">
                                 <a onclick="setType('Áo','DSSPUnisex')" href="./Unisex.html" >ÁO</a>
                                 <a onclick="setType('Quần','DSSPUnisex')" href="./Unisex.html" >QUẦN</a>
-                              </div>
-                          
+                              </div>                        
                         </li>
                         <li class="dropdown">
                             <a>GIỚI THIỆU</a>                          
@@ -52,73 +49,77 @@
                 </div>
                 <div class="topmenu-container1">
                     <div class="search">
-                        <input type="text" placeholder="Tìm kiếm">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm" id="search_bar">
+                        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
                     </div>
                     <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="#"><i class="fa-sharp fa-solid fa-weight-hanging"></i></a>
+                    <a href="./GioHang.html"><i class="fa-sharp fa-solid fa-weight-hanging"></i></a>
                 </div>
             </div>
             <div class="header-notice"></div>
         </div>
 
-        <div class="content">
-            <div class="adv"><img src="./img/test/Banner_cf_-_FIX.jpg"></div>
-            <div class="item-container">
-                <ul>
-                    <li>
-                        <div>
-                            <span><a class="info" onclick="setType('All','DSSPNam')" href="./Nam.html" >NAM</a></span>
-                            <a class="info1" onclick="setType('All','DSSPNam')" href="./Nam.html">XEM NGAY</a>
-                        </div>
-                        <a onclick="setType('All','DSSPNam')" href="./Nam.html"><img src="./img/test/1.jpg"></a>
-                    </li>
-                    <li>
-                        <div>
-                            <span><a class="info" onclick="setType('All','DSSPNu')" href="./Nu.html" >NỮ</a></span>
-                            <a class="info1" onclick="setType('All','DSSPNu')" href="./Nu.html">XEM NGAY</a>
-                        </div>
-                        <a onclick="setType('All','DSSPNu')" href="./Nu.html"><img src="./img/test/2.jpg"></a>
-                    </li>
-                    <li>
-                        <div>
-                            <span><a class="info" onclick="setType('All','DSSPUnisex')" href="./Unisex.html" >UNISEX</a></span>
-                            <a class="info1"onclick="setType('All','DSSPUnisex')" href="./Unisex.html">XEM NGAY</a>
-                        </div>
-                        <a onclick="setType('All','DSSPUnisex')" href="./Unisex.html"><img src="./img/Unisex/cac-cua-hang-ban-do-unisex-tren-shopee-1644854692.jpg.webp"></a>
-                    </li>
-                </ul>
-            </div>
+        <div class="content">         
+            <div class="container">
+               
+                <div class="item1">
+                    <img id="detail_img_product"></img>
+                </div>
+                 <div class="item2">
+                    <div>
+                        <h2 id="detail_name_product" style="line-height: 0px;"></h2>
+                        <span id="detail_id_product"></span>
+                        <hr style="margin-top: 25px;">
+                    </div>
+                    <div style="line-height:50px">
+                        <span id="price" style="font-size: 15px;"></span>
+                    </div>
 
-            
-                <div class="container">
-                    <div class="container-content">SẢN PHẨM BÁN CHẠY</div>
-                    <div class="list-products">
-                        <ul>
-                            <li><img src="./img/test/ANIME.webp"></li>
-                            <li><img src="./img/test/MU.jpg"></li>
-                            <li><img src="./img/test/NAVI.jfif"></li>
-                            <li><img src="./img/test/SBTC.jpg"></li>
-                            <li><img src="./img/test/TTG.webp"></li>
-                        </ul>
+                    <div style="line-height:50px">
+                        <span id="brand" style="font-size: 15px;"></span>
                     </div>
-                    <div class="see-all"><a href="#">XEM TẤT CẢ</a></div>
-                </div>
-            
-                <div class="container">
-                    <div class="container-content">SẢN PHẨM MỚI</div>
-                    <div class="list-products">
-                        <ul>
-                            <li><img src="./img/test/ANIME.webp"></li>
-                            <li><img src="./img/test/MU.jpg"></li>
-                            <li><img src="./img/test/NAVI.jfif"></li>
-                            <li><img src="./img/test/SBTC.jpg"></li>
-                            <li><img src="./img/test/TTG.webp"></li>
-                        </ul>
+
+                    <div>
+                        <span>SỐ LƯỢNG:</span>
+                        <div class="amount">
+                            <div class="inc_dec" onclick="decrease()"><span>-</span></div>
+                            <input type="text" class="number" id="number" value="1">
+                            <div class="inc_dec" onclick="increase()"><span>+</span></div>
+                        </div>
                     </div>
-                    <div class="see-all"><a href="#">XEM TẤT CẢ</a></div>
+
+                    <div class="add_cart" >
+                        <button>THÊM VÀO GIỎ HÀNG</button>                    
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <div class="guarantee">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <span>Miễn phí vận chuyển</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <span>Hoàn tiền 100%</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="guarantee">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <span>Kiểm tra hàng</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fa-solid fa-right-left"></i>
+                            <span>Miễn phí đổi trả</span>
+                        </div>
+                    </div>
+                 </div>  
                 </div>
-           
+            </div>
+        </div>
+        <div class="pages">
+           <div>
+                <ul id="pages">
+                </ul>
+           </div>
         </div>
         <footer class="footer">
             <div class="container"> 
@@ -166,6 +167,6 @@
         </footer>
 
     </div>
-    
+    <script src="./js/chitietsanpham.js"></script>
 </body>
 </html>

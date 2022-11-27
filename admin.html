@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <script src="./js/admin.js"></script>
+
+</head>
+<body onload="show('DSSPNam')">
+    <div class="main">
+
+        <div class="content">
+            <div class="leftmenu">
+                <div onclick="back()"><span>TRỞ VỀ CỬA HÀNG</span></div>
+                <div onclick="show('DSSPNam')"><span>QUẢN LÝ QUẦN ÁO NAM</span></div>
+                <div onclick="show('DSSPNu')"><span>QUẢN LÝ QUẦN ÁO NỮ</span></div>
+                <div onclick="show('DSSPUnisex')"><span >QUẢN LÝ QUẦN ÁO UNISEX</span></div>          
+            </div>
+            <div class="table_content">
+                <div class="title" id="title">DANH MỤC</div>
+                <div class="table_container" id="table_container">
+                    
+                </div>
+                <span class="titleimg">HÌNH ẢNH SẢN PHẨM</span>
+                <div class="showimg" id="img">      
+
+                </div>
+                
+                <div class="add_table">           
+                    <div class="info">
+                        <div class="container_item">
+                            <div class="item1">
+                                <span>Mã sản phẩm</span>
+                            </div>
+                            <div class="item2">
+                                <input type="text" id="add_id" readonly>
+                            </div>
+                        </div>
+
+                        <div class="container_item">
+                            <div class="item1">
+                                <span>Loại</span>
+                            </div>
+                            <div class="item2">
+                                <select name="type" id="type">
+                                    <option value="Áo">Áo</option>
+                                    <option value="Quần">Quần</option>   
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="container_item" style="margin-top: 20px;">
+                            <div class="item1" style="border: none;">
+                                <input class="add_btn" type="button" value="THÊM SP" onclick="add()"> 
+                            </div>                         
+                        </div>
+
+                        <div class="container_item">
+                            <div class="item1">
+                                <span>Tên sản phẩm</span>
+                            </div>
+                            <div class="item2">
+                                <input id="name" type="text" placeholder="Nhập tên sản phẩm">
+                            </div>
+                        </div>
+
+
+                        <div class="container_item">
+                            <div class="item1">
+                                <span>Thương hiệu</span>
+                            </div>
+                            <div class="item2">
+                                <select name="brand" id="brand">
+                                    <option value="Dirty Coins" >Dirty Coins</option>
+                                    <option value="Yame" >Yame</option>
+                                    <option value="Levents" >Levents</option>
+                                    <option value="5TheWay" >5TheWay</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="container_item">
+                            <div class="item1" style="border: none;">
+                                <input class="fix_btn" type="button" value="SỬA SP" onclick="fix()">
+                            </div>                         
+                        </div>
+                        
+                        <div class="container_item" style="margin-right:20px">
+                            <div class="item1">
+                                <span>Giá</span>
+                            </div>
+                            <div class="item2">
+                                <input type="text" placeholder="Nhập giá sản phẩm" id="price">
+                            </div>
+                        </div>
+
+                        <div class="container_item" style="margin-right: 15px;">
+                            <div class="item1" style="border: none;">
+                                <input class="del_btn" type="button" value="XÓA SP"  onclick="del()"> 
+                            </div>                         
+                        </div>
+                        
+
+                        
+                    </div>      
+                    <div class="add_fix_img">
+                        <div class="showimg" id="add_fix_img"></div>
+                        <div class="choose_img">
+                            <input type="file" id="file-id" name="file_name" onchange="showimage();" accept="image/*">                            
+                        </div>
+                    </div>
+                </div>
+                         
+                        <th></th>
+                    </ul>                          
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

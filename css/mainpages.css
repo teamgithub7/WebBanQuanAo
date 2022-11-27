@@ -2,8 +2,6 @@ body{
     margin: 0px;
 }
 
-
-
 .main{
     width: 100%;
     height: 100%;
@@ -19,7 +17,6 @@ body{
     height: 100px;
     margin: 0px auto;
 }
-
 
 .topmenu img{
     float: left;
@@ -51,13 +48,14 @@ body{
 }
 
 .dropdown a{
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 .dropdown :hover {
     border-bottom: solid 1px black;
 }
+
 
 .dropdown-content {
     display: none;
@@ -81,7 +79,7 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+  
 .topmenu-container1{
     float: right;
     height: 100%;
@@ -128,107 +126,151 @@ body{
 
 .content{
     height: auto;
+    min-height: 1000px;
     width: 100%;
-}
-
-.adv{
-    height: 700px;
-    width: 100%;
-}
-
-.adv img{
-    width: 100%;
-    height: 100%;
-}
-
-.item-container{
-    height: 500px;
-    width: 100%;
-}
-
-.item-container ul{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    list-style: none;
-    padding: 0px;
-}
-
-.item-container li{
-    width: 33%;
-    height: 100%;
-    margin: 0px auto;
-    position: relative;
-}
-
-.item-container img{
-    width: 100%;
-    height: 100%;
-}
-
-.item-container div{
-    position: absolute;
-    background-color: rgba(69, 67, 67, 0.375);
-    height: 100px;
-    width: 100%;
-    bottom: 0px;
-    text-align: center;
-}
-
-.info{
-    width: 100%;
-    color: white;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 50px;
-    display: block;
-    text-decoration: none;
-}
-
-.info1{
-    color: white;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: solid 1px white;
-    padding: 5px;
-    text-decoration: none;
 }
 
 .container{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: auto;
-    position: relative;
+    height: 100%;
+    width: 85%;
+    margin: 100px auto;
 }
 
-.container-content {
-    font-size: 25px;
-    height: 50px;
+.filters{
+    height: auto;
+    width: 20%;
+    float: left;
+}
+
+.filter{
+    height: auto;
     width: 100%;
+    margin:15px 0px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.filter span{
+    width: 100%;
+    display: block;
+}
+
+.box{
+    width: 30px !important;
+    height: 30px;
+    margin: 8px 8px;
+    border: solid 1px black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.box span{
+    width: 100% ;
+    height: 100% ;
+}
+
+.box:hover span{
+    background-color: black;
+    color: white;
+}
+
+.amount{
+    border: solid 1px black;
+    width: 100%;
+    height: 25px;;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.amount span{
+    width: 100%;
+    height: 100%;
+}
+
+.amount:hover span{
+    background-color: black;
+    color: white;
+}
+
+.filters i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.filters a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.bar{
+    width: 75%;
+    height: 60px;
+    float: right;
+}
+
+.bar span{
+    font-size: 25px;  
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+    margin-left: 20px;
 }
 
 .list-products{
-    width: 85%;
-    height: 300px;
-    margin: 50px auto;
+    height: auto;
+    width: 75%;
+    margin-left: 50px;
+    min-height: 800px;
+    float: right;
 }
 
 .list-products ul{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0px;
     margin: 0px;
-    width: 100%;
-    height: 100%;
+    padding: 0px;
 }
 
 .list-products li{
-    width: 20%;
-    height: 100%;
+    width: 22%;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.name_price{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.name{
+    display: inline-block;
+    line-height: 30px;
+    width: 100%;
+    height: 30px;
+}
+
+.price{
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
 }
 
 .list-products img{
@@ -236,20 +278,36 @@ body{
     height: 100%;
 }
 
-.see-all{
+.pages{
     width: 100%;
     height: 50px;
-    text-align: center;
 }
 
-.see-all a{
-    color: black;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: solid 2px black;
-    padding: 5px;
-    text-decoration: none;
+.pages div{
+    width: 45%;
+    float: right;
 }
+
+.pages ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.pages li{
+    height: 100%;
+    width: 25px;
+    margin: 0px 8px;
+}
+
+.pages a{
+    text-align: center;
+    display: block;
+    border: solid 1px #333f48 ;
+    cursor: pointer;
+}
+
 
 .footer{
     width: 100%;
