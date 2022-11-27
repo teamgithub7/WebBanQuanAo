@@ -1,3 +1,0 @@
-push code từ terminal lên git ko push từ trực tiếp git web
-Lấy code của branch source
-Code của ai thì up lên branch có tên của người đó 

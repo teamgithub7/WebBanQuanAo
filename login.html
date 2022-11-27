@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="topmenu">
+                <a href="./home.html"><img src="./img/logo/logo1.png"></a>
+                <div class="topmenu-container">
+                    <ul>
+                        <li class="move_page">
+                            <a href="./Yame.html" >ÁO YAME</a>                     
+                        </li>
+                        <li class="move_page">
+                            <a href="./Dirty Coins.html" >ÁO DIRTY COINS</a>                         
+                        </li>
+                        <li class="move_page">
+                            <a href="./5TheWay.html" >ÁO 5THEWAY</a>                         
+                        </li>
+                        <li class="move_page">
+                            <a href="./gioithieu.html">GIỚI THIỆU</a>                          
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="topmenu-container1">
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="./cart.html"><i class="fa-sharp fa-solid fa-weight-hanging"></i></a> <!---sua o cho nay--> 
+                </div>
+            </div>
+            <div class="header-notice"></div>
+        </div>
+        <div class="container_login">
+            <form>
+                <div class="sign_in">
+                    <div class="container_input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="us_in" type="text" placeholder="            Email của bạn">
+                    </div>
+    
+                    <div class="container_input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input id="pwd_in" type="text" placeholder="           Mật khẩu cùa bạn">
+                    </div>
+    
+                    <div class="container_button">
+                        <button type="button" onclick="sign_in()">Đăng nhập</button>
+                    </div>           
+                </div>               
+
+                <div class="sign_up">
+                    <div class="container_input">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="name" type="text" placeholder="            Họ và tên">
+                    </div>
+
+                    <div class="container_input">
+                        <i class="fa-solid fa-phone"></i>
+                        <input id="number" type="text" placeholder="            Số điện thoại">
+                    </div>
+
+                    <div class="container_input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="us_up" type="text" placeholder="            Email của bạn">
+                    </div>
+    
+                    <div class="container_input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input id="pwd_up" type="text" placeholder="           Mật khẩu cùa bạn">
+                    </div>
+    
+                    <div class="container_button">
+                        <button type="button" onclick="sign_up()">Đăng ký</button>
+                    </div>           
+                </div>               
+            </form>                   
+        </div>
+
+        <footer class="footer">
+            <div class="containerf"> 
+                <div class="thongtin">
+                    <h2 style="margin-left: 45px;">2N2Mstore</h2>
+                    <ul class="info">
+                        
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>26 Hồng Bàng, Phường 15,</br> Quận 10, TP.Hồ Chí Minh</span></br>
+                            <span><i class="fa fa-phone"></i></span>
+                            <span>(84+) 954362413</span></br>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span>2N2Mstore@gmail.com</span>   
+                    </ul>
+                </div>
+
+                <div class="noidungsanpham">
+                    <h2>Sản phẩm</h2>
+                    <ul style="font-size: 150%;">
+                        <a>> Quần áo Nam</a></br>
+                        <a>> Quần áo Nữ</a></br>
+                        <a>> Quần áo Unisex</a>
+                    </ul>
+                </div>
+
+                <div class="chinhsach">
+                    <h2>Chính sách</h2>
+                    <ul style="font-size: 150%;">
+                        <a>> Bảo mật thanh toán</a></br>
+                        <a>> Bảo mật thông tin cá nhân</a></br>
+                        <a>> Giải quyết khiếu nại</a>
+                    </ul>
+                </div>
+
+
+                <div class="thanhtoan">
+                        <h2 >Thông tin</h2>
+                            <ul style="font-size: 150%;">
+                                <a>> Giới thiệu </a></br>
+                                <a>> Liên hệ</a></br>
+                                <a>> Tuyển dụng</a>
+                            </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

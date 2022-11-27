@@ -1,0 +1,199 @@
+body{
+    margin: 0px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+}
+
+.topmenu{
+    width: 85%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.topmenu img{
+    float: left;
+}
+
+.topmenu-container {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 80px;
+}
+
+.topmenu ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+
+.move_page{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 40px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.move_page a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.move_page :hover {
+    border-bottom: solid 1px black;
+}
+  
+.topmenu-container1{
+    float: right;
+    height: 100%;
+    width: auto;
+}
+
+.search{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 40px ;
+    float: left;
+    margin-right: 12px;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    border-bottom:solid 1px #c2c2c2;
+    width: 200px;
+    font-size: 15px;
+}
+
+.topmenu-container1 a{
+    float: left;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.search i{
+    position: absolute;
+    right: 10px;
+}
+
+.header-notice{
+    width: 100%;
+    height: 50px;
+    background-color: #333f48;
+}
+
+.content{
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 60%;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters{
+    float: left;
+    width: 30%;
+    height: 150px;
+    border: solid 1px #ccc;
+    background-color: whitesmoke;
+}
+
+.filter{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px black;
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.filter span{
+    padding-left: 20px;
+    display: block;
+}
+
+.filter :hover {
+    background-color: #ccc;
+}
+
+
+.filters_infor{
+    float: left;
+    width: 65%;
+    height: 350px;
+    margin-left: 35px;
+}
+
+.filters_infor table{
+    height: 350px;
+    overflow-y: scroll;
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+}
+
+
+.filter_infor{
+    float: left;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.filter_infor span{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #333f48;
+    color: rgb(255, 255, 255);
+}
+
+footer .containerf{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.thongtin{
+    margin-left: 100px;
+}
+
+.noidungsanpham{
+    margin-left: 100px;
+}
+
+.chinhsach{
+    margin-left: 100px;
+}
+
+.thanhtoan{
+    margin-left: 100px;
+
+}

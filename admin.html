@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <script src="./js/QLSP.js" ></script>
+    <script src="./js/QLKH.js" ></script>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body onload="Products_Manage()">
+    <div class="main">
+        <div class="fix_popup" id="fix_popup">
+            
+        </div>
+        <div class="content">
+            <div class="filters">
+                <div class="filter">
+                    <span onclick="back()"><a>Trang chủ</a></span>
+                </div>
+                <div class="filter" onclick="Products_Manage()">
+                    <span>Quản lý sản phẩm</span>
+                </div>
+                <div class="filter" style="border-bottom:3px solid black ;" onclick="Customers_Manage()">
+                    <span>Quản lý khách hàng</span>
+                </div>
+                
+            </div>
+            <div class="info_filters" id="info_filters">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

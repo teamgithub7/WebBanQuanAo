@@ -1,0 +1,323 @@
+body{
+    margin: 0px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+}
+
+.topmenu{
+    width: 85%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.topmenu img{
+    float: left;
+}
+
+.topmenu-container {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 80px;
+}
+
+.topmenu ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+
+
+.move_page{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 40px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.move_page a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.move_page :hover {
+    border-bottom: solid 1px black;
+}
+
+
+.topmenu-container1{
+    float: right;
+    height: 100%;
+    width: auto;
+}
+
+.search{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 40px ;
+    float: left;
+    margin-right: 12px;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    border-bottom:solid 1px #c2c2c2;
+    width: 200px;
+    font-size: 15px;
+}
+
+.topmenu-container1 a{
+    float: left;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.search i{
+    position: absolute;
+    right: 10px;
+}
+
+.header-notice{
+    width: 100%;
+    height: 50px;
+    background-color: #333f48;
+}
+
+.content{
+    height: auto;
+    min-height: 1000px;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 85%;
+    margin: 100px auto;
+}
+
+.filters{
+    height: auto;
+    width: 20%;
+    float: left;
+}
+
+.filter{
+    height: auto;
+    width: 100%;
+    margin:15px 0px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.filter span{
+    width: 100%;
+    display: block;
+}
+
+
+.filters i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.filters a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.box{
+    width: 30px !important;
+    height: 30px;
+    margin: 8px 8px;
+    border: solid 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.box span{
+    width: 100% ;
+    height: 100% ;
+}
+
+.box:hover span{
+    background-color: black;
+    color: white;
+}
+
+.amount{
+    border: solid 1px black;
+    width: 100%;
+    height: 25px;;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.amount span{
+    width: 100%;
+    height: 100%;
+
+}
+
+.amount:hover span{
+    background-color: black !important;
+    color: white !important;
+}
+
+
+
+.bar{
+    width: 75%;
+    height: 60px;
+    float: right;
+}
+
+.bar span{
+    font-size: 25px;  
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.list-products{
+    height: auto;
+    width: 75%;
+    margin-left: 50px;
+    min-height: 800px;
+    float: right;
+}
+
+.list-products ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-products li{
+    width: 22%;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.name_price{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.name{
+    display: inline-block;
+    line-height: 30px;
+    width: 100%;
+    min-height: 30px;
+    line-break: anywhere;
+}
+
+.price{
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+
+.list-products img{
+    width: 100%;
+    height: 100%;
+}
+
+.pages{
+    width: 100%;
+    height: 50px;
+}
+
+.pages div{
+    width: 45%;
+    float: right;
+}
+
+.pages ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.pages li{
+    height: 100%;
+    width: 25px;
+    margin: 0px 8px;
+}
+
+.pages a{
+    text-align: center;
+    display: block;
+    border: solid 1px #333f48 ;
+    cursor: pointer;
+}
+
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #333f48;
+    color: rgb(255, 255, 255);
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.thongtin{
+    margin-left: 100px;
+}
+
+.noidungsanpham{
+    margin-left: 100px;
+}
+
+.chinhsach{
+    margin-left: 100px;
+}
+
+.thanhtoan{
+    margin-left: 100px;
+
+}

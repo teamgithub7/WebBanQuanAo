@@ -1,0 +1,204 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+}
+
+.topmenu{
+    width: 85%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.topmenu img{
+    float: left;
+}
+
+.topmenu-container {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 80px;
+}
+
+.topmenu ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+.move_page{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 40px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.move_page a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.move_page :hover {
+    border-bottom: solid 1px black;
+}
+
+.topmenu-container1{
+    float: right;
+    height: 100%;
+    width: auto;
+}
+
+.search{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 40px ;
+    float: left;
+    margin-right: 12px;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    border-bottom:solid 1px #c2c2c2;
+    width: 200px;
+    font-size: 15px;
+}
+
+.topmenu-container1 a{
+    float: left;
+    margin-top: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.search i{
+    position: absolute;
+    right: 10px;
+}
+
+.header-notice{
+    width: 100%;
+    height: 50px;
+    background-color: #333f48;
+}
+
+
+.container_login{
+    margin: 100px auto;
+    height: 400px;
+    width: 80%;
+}
+
+.sign_in{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.container_input {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+.container_input input{
+    float:left;
+    height:30px;
+    width: 100%;
+    padding: 0px;
+}
+
+.container_input i{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+}
+
+.container_button{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    float: left;
+    margin-top: 25px;
+}
+
+.container_button button{
+    width: 50%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_button:hover button{
+    background-color: black;
+    color: white;
+}
+
+.sign_up{
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #333f48;
+    color: rgb(255, 255, 255);
+}
+
+footer .containerf{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.thongtin{
+    margin-left: 100px;
+}
+
+.noidungsanpham{
+    margin-left: 100px;
+}
+
+.chinhsach{
+    margin-left: 100px;
+}
+
+.thanhtoan{
+    margin-left: 100px;
+
+}
