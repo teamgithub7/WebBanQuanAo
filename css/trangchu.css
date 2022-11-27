@@ -246,33 +246,3 @@ body{
     text-decoration: none;
 }
 
-.footer{
-    width: 100%;
-    height: 350px;
-    background-color: #333f48;
-}
-    .title {
-        width: 73%;
-        font-size: 23px;
-    }
-    
-    .info {
-        font-size: 15px;
-    }
-    
-    .fast-access {
-        margin-left: 65px;
-    }
-    
-    .policy {
-        margin-left: 20px;
-    }
-    
-    .ways-to-pay {
-        margin-left: 20px;
-    }
-    
-    .verrified {
-        margin-left: 20px;
-    }
-    
