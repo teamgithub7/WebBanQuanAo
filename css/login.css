@@ -66,6 +66,10 @@ body{
     width: auto;
 }
 
+.topmenu-container1 i{
+    cursor: pointer;
+}
+
 .search{
     height: auto;
     width: auto;

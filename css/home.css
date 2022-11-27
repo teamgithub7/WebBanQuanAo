@@ -90,10 +90,13 @@ body{
     color: inherit;
 }
 
+.topmenu-container1 i{
+    cursor: pointer;
+}
+
 .search i{
     position: absolute;
     right: 10px;
-    cursor: pointer;
 }
 
 .header-notice{
