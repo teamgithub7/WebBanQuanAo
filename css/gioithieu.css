@@ -1,0 +1,40 @@
+footer {
+    border: 1px solid black;
+}
+
+.title {
+    width: 73%;
+    font-size: 23px;
+}
+
+.info {
+    font-size: 15px;
+}
+
+.media {
+    color: gray;
+}
+
+.fast-access {
+    margin-left: 65px;
+}
+
+.policy {
+    margin-left: 20px;
+}
+
+.ways-to-pay {
+    margin-left: 20px;
+}
+
+.verrified {
+    margin-left: 20px;
+}
+
+.intro-content{
+    margin-left:60px;
+}
+
+.intro-tittle{
+    margin-left: 30px;
+}
