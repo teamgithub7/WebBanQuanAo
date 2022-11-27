@@ -1,0 +1,94 @@
+/*-----------mở dầu---------*/
+a{
+    margin:0px;
+    text-decoration: none;
+}
+ul, li{
+    margin:0px;
+    padding:0px;
+    }
+/* <<<<<<< HEAD
+
+=======
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e */
+tr{
+    text-align: center;
+}
+.table-main{
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 50px auto;
+    
+}
+.table-main thead tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table-main thead tr th{
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+}
+
+.table-main thead tr th:first-child{
+    text-align: left;
+
+}
+.table-main tbody tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+}
+
+.row{
+    display: flex;
+}
+.sp{
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+    text-align: left;
+}
+.bt-Delete{
+/* <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e */
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: white;
+    border-radius: 5px  ;
+    background-color: #ddd;
+}
+.bt-Delete:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(143, 134, 134);
+/* <<<<<<< HEAD
+=======
+======= */
+    color: #ddd;
+    padding: 5px 10px;
+    border: white;
+    border-radius: 5px  ;
+    background-color: rgb(109, 118, 17);
+}
+.bt-Delete:hover{
+    background-color: #cdc60d;
+/* >>>>>>> f7f542a32499b6b5161ff8c4a6a14af5a146eff3
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e */
+}
+.mua{
+    color: #ddd;
+    float: left;
+    padding: 10px 20px;
+    border: white;
+    border-radius: 5px;
+/* <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e */
+    background-color: tomato;
+}
+.mua:hover{
+    background-color: rgb(207, 139, 13);
+}
+/* >>>>>>> d455d7fa637bdf0cdab3e222a378a8a3fbc4a82e */

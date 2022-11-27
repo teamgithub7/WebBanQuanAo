@@ -1,9 +1,9 @@
-localStorage.setItem("DSSPNu",Number(0))
+/*  localStorage.setItem("DSSPNu",Number(0))
 localStorage.setItem("idNu",Number(1000));
 localStorage.setItem("DSSPNam",Number(0))
 localStorage.setItem("idNam",Number(0));
 localStorage.setItem("DSSPUnisex",Number(0))
-localStorage.setItem("idUnisex",Number(2000));
+localStorage.setItem("idUnisex",Number(2000));  */
 localStorage.setItem("choose_admin","DSSPNam")
 
 
@@ -82,7 +82,7 @@ function showimage(){
 }
 
 function back(){
-    window.location.href = "../trangchu.html";
+    window.location.href = "./trangchu.html";
 }
 
 function showinfo(id){
