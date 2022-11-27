@@ -96,4 +96,4 @@ function setAdmin()
     localStorage.setItem("DSTK", JSON.stringify(accounts));
 }
 
-setAdmin();
+setAdmin(); // chạy lần đầu sau đó ẩn dòng này đi

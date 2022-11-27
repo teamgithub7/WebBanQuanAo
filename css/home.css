@@ -93,6 +93,7 @@ body{
 .search i{
     position: absolute;
     right: 10px;
+    cursor: pointer;
 }
 
 .header-notice{

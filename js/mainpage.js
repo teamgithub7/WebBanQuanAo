@@ -39,6 +39,7 @@ function loadPage(brand)
             list_load.push(list[i]);
         }
     }
+    isAdmin();
     localStorage.setItem('DSBL', JSON.stringify(list_load));
     load(list_load,"DSBL");
 }
@@ -80,6 +81,7 @@ function page(cur,name_list){
     }
 
     document.getElementById('list-products').innerHTML = s
+
 }
 
 function Price_Filter(amount,brand)
@@ -153,7 +155,7 @@ function isAdmin(){
     for(let i=0;i<list_account.length;i++)
     {
         if(list_account[i].username == username && Number(list_account[i].role) == 0)
-        {
+        {        
             var s = document.getElementById('topmenu-container1').innerHTML;
             s = s + "<a href=\"./admin.html\"> <i class=\"fa-solid fa-gear\"></i></a> ";
             document.getElementById('topmenu-container1').innerHTML = s;

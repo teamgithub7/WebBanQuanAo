@@ -49,6 +49,10 @@ function isLogin(){
     }
 }
 
+function detail_product(id){
+    sessionStorage.setItem("idctsp",id)
+    window.location.href ="./detailproduct.html";
+}
 function getList_TK(){
     var list = [];
     list = JSON.parse(localStorage.getItem('DSTK'));
